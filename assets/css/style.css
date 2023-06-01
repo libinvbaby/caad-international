@@ -1772,3 +1772,52 @@ body {
     padding: 50px;
   }
 }
+
+.card{
+  background:linear-gradient(90deg, rgba(255, 83, 83, 1) 0%, rgba(240, 60, 60, 1) 50%, rgba(233, 0, 0, 1) 100%);
+  color:#fff;
+  padding:10px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 250px;
+}
+.card-bim{
+  height: 400px !important;
+
+}
+.card h5{
+  color:#fff;
+  padding: 30px 0 8px;
+}
+
+.card p{
+  color:#fff;
+  padding-top: 15px;
+  margin-bottom: 5px;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+.underlined-text {
+  position: relative;
+}
+
+.underlined-text::before,
+.underlined-text::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 20%;
+  bottom: -2px; /* Adjust this value to control the underline's position */
+  height: 2px; /* Adjust this value to control the underline's thickness */
+  background-color: #fff; /* Adjust this value to set the underline's color */
+}
+
+.underlined-text::before {
+  width: 50%; /* Adjust this value to control the underline's length before the text */
+}
+
+.underlined-text::after {
+  width: 50%; /* Adjust this value to control the underline's length after the text */
+}
