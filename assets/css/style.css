@@ -1780,6 +1780,7 @@ body {
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 250px;
+  margin-bottom: 10px;
 }
 .card-bim{
   height: 400px !important;
