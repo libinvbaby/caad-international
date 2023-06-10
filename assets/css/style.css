@@ -1772,7 +1772,11 @@ body {
     padding: 50px;
   }
 }
-
+.item{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .card{
   width: 20rem;
   height: 500px;;
@@ -1785,7 +1789,7 @@ overflow: hidden;
 }
 @media only screen and (max-width:768px){
   .card{
-    width: 100%;}
+    width: 80%;}
 }
 .card-img-top{
   height:200px;
