@@ -1878,3 +1878,33 @@ color:#000;
 .underlined-text::after {
   width: 50%; /* Adjust this value to control the underline's length after the text */
 }
+.inside{
+  display: flex;
+}
+.inside h1{
+  padding: 10px 20px;
+}
+
+.client-img{
+  border-right: 1px solid #eceff0;
+    border-bottom: 1px solid #eceff0;
+    
+}
+.client-img img{
+  width: 100%;
+  padding: 10px;
+ 
+}
+.upcoming-batch{
+  position: relative;
+}
+.upcoming-batch::after{
+  content: '';
+  display: inline-block;
+  border-bottom: 5px solid #db0000;
+  border-radius: 5px;
+  width:10%;
+  position: absolute;
+  bottom: -20px; /* Adjust the distance between the text and the underline */
+  left: 45%; /* Adjust the horizontal position of the underline */
+}
