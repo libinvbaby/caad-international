@@ -1895,16 +1895,19 @@ color:#000;
   padding: 10px;
  
 }
-.upcoming-batch{
+.heading-with-underline{
   position: relative;
 }
-.upcoming-batch::after{
+.heading-with-underline::before{
   content: '';
   display: inline-block;
   border-bottom: 5px solid #db0000;
   border-radius: 5px;
-  width:10%;
+  width:8%;
   position: absolute;
   bottom: -20px; /* Adjust the distance between the text and the underline */
-  left: 45%; /* Adjust the horizontal position of the underline */
+  left: 46%; /* Adjust the horizontal position of the underline */
+}
+.fa-star{
+  color:#181d30
 }
