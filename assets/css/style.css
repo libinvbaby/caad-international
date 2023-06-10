@@ -1907,7 +1907,7 @@ color:#000;
   display: inline-block;
   border-bottom: 5px solid #fff;
   border-radius: 5px;
-  width:8%;
+  width:10%;
   position: absolute;
   bottom: -20px; /* Adjust the distance between the text and the underline */
   left: 46%; /* Adjust the horizontal position of the underline */
