@@ -1957,10 +1957,11 @@ color:#000;
     width:100%;
     position: fixed;
     left: 0;
+    top: 20%;
   }
   .close{
     position:fixed ;
-    top: 10px;
+    top: 20% !important;
     right: 0% !important;}
 }
 .close{
