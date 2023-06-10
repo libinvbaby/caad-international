@@ -28,8 +28,72 @@
   </head>
 
 <body>
-
-
+  <script>
+    const  openpopup=(course)=>{
+      let popup =  document.getElementById('poup-container');
+      const courseName = document.getElementById('course-name')
+      courseName.value = course;
+      popup.style.display="block"
+    }
+    const  closepopup=()=>{
+      let popup =  document.getElementById('poup-container');
+      popup.style.display="none"
+    }
+  </script>
+  <div >
+<div   id="poup-container" class="popup">
+    <button onclick="closepopup();" id="close-btn"  class="close">Close</button>
+    <div class="section-heading">
+      <h6></h6>
+      <h4 class="text-white">Reserve your slot
+      </h4>
+    </div>
+    <form id="calculate" action="" method="get">
+      <div class="row">
+        <div class="col-lg-6">
+          <fieldset>
+            <label for="name">Your Name</label>
+            <input type="name" name="name" id="name" placeholder="" autocomplete="on" required>
+          </fieldset>
+        </div>
+        <div class="col-lg-6">
+          <fieldset>
+            <label for="email">Your Email</label>
+            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="" required="">
+          </fieldset>
+        </div>
+        <div class="col-lg-12">
+          <fieldset>
+            <label for="email">Pick Your Date</label>
+            <input type="date" name="date" id="date" placeholder="" required="">
+          </fieldset>
+        </div>
+        <div class="col-lg-12">
+          <fieldset>
+            <label for="chooseOptionSoftware" class="form-label">software</label>
+            <input type="text" name="course" id="course-name"  autocomplete="on" required>
+        </fieldset>
+        </div>
+        <div class="col-lg-12">
+          <fieldset>
+            <label for="chooseOption" class="form-label">pick Your Time</label>
+            <select name="Category" class="form-select" aria-label="Default select example" id="chooseOption" onchange="this.form.click()">
+                <option selected>Choose an Option</option>
+                <option type="checkbox" name="option1" value="Online Banking">10:00am - 12:00pm</option>
+                <option value="Financial Control">12:30pm - 03.00pm</option>
+                <option value="Yearly Profit">03.00pm - 06.00pm</option>
+            </select>
+        </fieldset>
+        </div>
+        <div class="col-lg-12">
+          <fieldset>
+            <button type="submit" id="form-submit" class="orange-button">Submit Now</button>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
       <div class="container">
@@ -93,7 +157,7 @@
   </div>
 
   <!-- ***** Main Banner Area End ***** -->
-
+<button onclick="openpopup()">popup</button>
   <section class="services" id="courses">
     <div class="container">
       <div class="section-heading">
@@ -175,28 +239,28 @@
       </h4>
     </div>
     <div class="owl-carousel owl-theme">
-      <div class="item">
+      <div class="item" onclick="openpopup('REVIT ARCHITECTURE')">
         <h1 class=" text-center" style="font-size:30px;font-weight:bold;color: #fff;"><i class="fa-regular fa-star"></i> REVIT ARCHITECTURE      
         </h1>
       </div>
-      <div class="item">
+      <div class="item" onclick="openpopup('3DSMAX')">
         <h1 class=" text-center" style="font-size:30px;font-weight:bold;color: #fff;"><i class="fa-regular fa-star"></i> 3DSMAX     
         </h1>
       </div>
-      <div class="item">
+      <div class="item" onclick="openpopup('AUTOCAD')">
         <h1 class=" text-center" style="font-size:30px;font-weight:bold;color: #fff;"><i class="fa-regular fa-star"></i> AUTOCAD      
         </h1>
       </div>
-      <div class="item">
+      <div class="item" onclick="openpopup('REVIT STRUCTURE')">
           
         <h1 class=" text-center" style="font-size:30px;font-weight:bold;color: #fff;"><i class="fa-regular fa-star"></i> REVIT STRUCTURE     
         </h1>
       </div>
-      <div class="item">
+      <div class="item" onclick="openpopup('SOLIDWORKS')">
         <h1 class=" text-center" style="font-size:30px;font-weight:bold;color: #fff;"><i class="fa-regular fa-star"></i> SOLIDWORKS     
         </h1>
       </div>
-      <div class="item">
+      <div class="item" onclick="openpopup('CATIA')">
         <h1 class=" text-center" style="font-size:30px;font-weight:bold;color: #fff;"><i class="fa-regular fa-star"></i>       CATIA
         </h1>
       </div>
