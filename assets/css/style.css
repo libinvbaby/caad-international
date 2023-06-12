@@ -1978,3 +1978,30 @@ color:#000;
 .close h2{
   color: #fff;
 }
+.course-card{
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 5px 15px rgba(0,0, 0.3);
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+
+}
+
+.course-card h1{
+  color: #000;
+  font-size: 25px;
+  padding: 20px;
+  font-weight: bold;
+}
+.course-card button{
+  background-color:#db0000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding:10px 20px;
+  border-radius:10px;
+  margin-bottom: 10px;
+}
